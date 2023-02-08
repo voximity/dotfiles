@@ -4,7 +4,7 @@
 sudo dnf install -y -q i3 python3-pip
 
 # install i3 agenda
-echo "Installing i3-agenda..."
+echo "Grabbing i3-agenda..."
 sudo pip3 install -q \
     python-bidi \
     google-api-python-client \
@@ -13,9 +13,9 @@ sudo pip3 install -q \
     typing_extensions
 
 cd ./configs/i3
-rm -rf i3-agenda
-git clone -q https://github.com/rosenpin/i3-agenda
-
+if [ ! -d i3-agenda ]; then
+    git clone -q https://github.com/rosenpin/i3-agenda
+fi
 cd ../..
 
 # symlink our config
