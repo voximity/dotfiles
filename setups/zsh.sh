@@ -12,6 +12,18 @@ fi
 # copy custom themes to oh my zsh themes
 cp -a ./configs/zsh/themes/. ~/.oh-my-zsh/themes/
 
+# install zsh-syntax-highlighting
+if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+        ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+fi
+
+# install zsh-autosuggestions
+if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git \
+        ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+fi
+
 # set zsh as default shell
 if [[ "$SHELL" != "/usr/bin/zsh" ]]; then
     chsh -s /usr/bin/zsh
