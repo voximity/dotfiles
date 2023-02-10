@@ -18,10 +18,7 @@ install_plugin () {
             ~/.oh-my-zsh/custom/plugins/$2
 }
 
-# install zsh-syntax-highlighting
 install_plugin zsh-users zsh-syntax-highlighting
-
-# install zsh-autosuggestions
 install_plugin zsh-users zsh-autosuggestions
 
 # set zsh as default shell
