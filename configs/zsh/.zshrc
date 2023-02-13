@@ -84,6 +84,12 @@ alias code="code-insiders"
 alias ls="exa"
 alias ll="exa -lbF --git"
 
+function whichpkg() {
+    local loc=$(which $1)
+    local pkg=$(rpm -qf $loc)
+    echo "$pkg ($loc)"
+}
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
