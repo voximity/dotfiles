@@ -70,7 +70,6 @@ ZSH_THEME="agnoster-voximity"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-alias code="code-insiders"
 
 plugins=(
     git
@@ -80,6 +79,10 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+alias code="code-insiders"
+alias ls="exa"
+alias ll="exa -lbF --git"
 
 # User configuration
 

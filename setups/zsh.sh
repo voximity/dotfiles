@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # install zsh
-sudo dnf install -y -q zsh util-linux-user
+sudo dnf install -y -q zsh exa util-linux-user
 
 # install oh my zsh if not installed
 if [ ! -d ~/.oh-my-zsh ]; then
