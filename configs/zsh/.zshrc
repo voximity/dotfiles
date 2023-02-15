@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 alias code="code-insiders"
 alias ls="exa"
 alias ll="exa -lbF --git"
+alias xcopy="xclip -selection clipboard"
+alias xpaste="xclip -o -selection clipboard"
 
 function whichpkg() {
     local loc=$(which $1)
