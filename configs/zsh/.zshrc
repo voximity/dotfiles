@@ -122,6 +122,6 @@ if [[ -d "$HOME/.nvm" ]]; then
 	source ~/.nvm/nvm.sh
 fi
 
-if [-s "$NVM_DIR/bash_completion" ]; then
+if [ -s "$NVM_DIR/bash_completion" ]; then
     \. "$NVM_DIR/bash_completion"
 fi
