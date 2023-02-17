@@ -118,4 +118,6 @@ function whichpkg() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[[ -d "$HOME/.nvm" ]] && source ~/.nvm/nvm.sh
+if [[ -d "$HOME/.nvm" ]]; then
+	source ~/.nvm/nvm.sh
+fi
