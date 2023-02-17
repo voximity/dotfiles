@@ -118,10 +118,5 @@ function whichpkg() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [[ -d "$HOME/.nvm" ]]; then
-	source ~/.nvm/nvm.sh
-fi
-
-if [ -s "$NVM_DIR/bash_completion" ]; then
-    \. "$NVM_DIR/bash_completion"
-fi
+[ -d "$HOME/.nvm" ] && source ~/.nvm/nvm.sh
+[ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
