@@ -118,5 +118,6 @@ function whichpkg() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export GPG_TTY=$(tty)
 [ -d "$HOME/.nvm" ] && source ~/.nvm/nvm.sh
 [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
