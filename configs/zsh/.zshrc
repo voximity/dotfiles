@@ -85,6 +85,7 @@ alias ls="exa"
 alias ll="exa -lbF --git"
 alias xcopy="xclip -selection clipboard"
 alias xpaste="xclip -o -selection clipboard"
+export TERM=xterm-256color
 
 function whichpkg() {
     local loc=$(which $1)
