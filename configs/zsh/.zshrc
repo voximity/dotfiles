@@ -122,3 +122,10 @@ function whichpkg() {
 export GPG_TTY=$(tty)
 [ -d "$HOME/.nvm" ] && source ~/.nvm/nvm.sh
 [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
+
+# bun completions
+[ -s "/home/zander/.bun/_bun" ] && source "/home/zander/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
