@@ -85,6 +85,7 @@ alias ls="exa"
 alias ll="exa -lbF --git"
 alias xcopy="xclip -selection clipboard"
 alias xpaste="xclip -o -selection clipboard"
+alias settings="XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 export TERM=xterm-256color
 
 function whichpkg() {
@@ -128,4 +129,6 @@ export GPG_TTY=$(tty)
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+
+# path
+export PATH="$BUN_INSTALL/bin:/usr/local/go/bin:$PATH"
