@@ -85,7 +85,7 @@ alias ls="exa"
 alias ll="exa -lbF --git"
 alias xcopy="xclip -selection clipboard"
 alias xpaste="xclip -o -selection clipboard"
-alias settings="XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+alias settings="XDG_CURRENT_DESKTOP=GNOME gnome-control-center >/dev/null 2>&1 &"
 export TERM=xterm-256color
 
 function whichpkg() {
